@@ -1,0 +1,331 @@
+
+
+
+DAY-3
+
+1
+Q) For the given JSON iterate over all for loops (for, for in, for of, forEach)
+ANS-
+CODE:-
+// NORMAL FOR LOOP
+ let obj = [
+
+    {
+        name: "mohan",
+        age: 2,
+        company: "guvi"
+    },
+    {
+        name: "rohan",
+        age: 3,
+        company: "guvi geeks",
+    },
+    {
+        name: "raju",
+        age: 4,
+        company: "guvi geeks network",
+    },
+];
+
+//NORMAL FOR LOOP
+for (i = 0; i < obj.length; i++) {
+    console.log(`
+    name:${obj[i].name}
+    age:${obj[i].age}
+    company:${obj[i].company}
+    
+    `);
+};
+     OUTPUT:-
+ 
+PS C:\Users\Asif\Desktop\html work> node script.js
+
+    name:mohan  
+    age:2       
+    company:guvi
+    
+    
+
+    name:rohan
+    age:3
+    company:guvi geeks
+
+
+
+    name:raju
+    age:4
+    company:guvi geeks network
+
+//FOR IN-LOOP
+
+let obj = [
+
+    {
+        name: "mohan",
+        age: 2,
+        company: "guvi"
+    },
+    {
+        name: "rohan",
+        age: 3,
+        company: "guvi geeks",
+    },
+    {
+        name: "raju",
+        age: 4,
+        company: "guvi geeks network",
+    },
+];
+
+//FOR IN-LOOP
+
+for (let index in obj) {
+    console.log(`
+    name:${obj[index].name}
+    age:${obj[index].age}
+    company:${obj[index].company}
+    
+    `)
+}
+
+
+
+   OUTPUT:-
+   
+PS C:\Users\Asif\Desktop\html work> node script.js
+
+    name:mohan  
+    age:2       
+    company:guvi
+    
+    
+
+    name:rohan
+    age:3
+    company:guvi geeks
+
+
+
+    name:raju
+    age:4
+    company:guvi geeks network
+
+
+//FOR OF-LOOP
+
+let obj = [
+
+    {
+        name: "mohan",
+        age: 2,
+        company: "guvi"
+    },
+    {
+        name: "rohan",
+        age: 3,
+        company: "guvi geeks",
+    },
+    {
+        name: "raju",
+        age: 4,
+        company: "guvi geeks network",
+    },
+];
+
+//FOR OF-LOOP
+
+for (let i of obj) {
+    console.log(`
+    name:${i.name}
+    age:${i.age}
+    company:${i.company}
+    
+    `)
+
+}
+
+
+   OUTPUT:-
+
+ PS C:\Users\Asif\Desktop\html work> node script.js
+
+    name:mohan  
+    age:2       
+    company:guvi
+    
+    
+
+    name:rohan
+    age:3
+    company:guvi geeks
+
+
+
+    name:raju
+    age:4
+    company:guvi geeks network
+
+
+// FOR EACH-LOOP
+
+let obj = [
+
+    {
+        name: "mohan",
+        age: 2,
+        company: "guvi"
+    },
+    {
+        name: "rohan",
+        age: 3,
+        company: "guvi geeks",
+    },
+    {
+        name: "raju",
+        age: 4,
+        company: "guvi geeks network",
+    },
+];
+
+//FOR OF-LOOP
+
+obj.forEach((item) => {
+
+    console.log(`
+    name:${item.name}
+    age:${item.age}
+    company:${item.company}
+    `);
+});
+
+
+  OUTPUT:-
+
+PS C:\Users\Asif\Desktop\html work> node script.js
+
+    name:mohan  
+    age:2       
+    company:guvi
+    
+
+    name:rohan
+    age:3
+    company:guvi geeks
+
+
+    name:raju
+    age:4
+    company:guvi geeks network
+
+
+
+
+2
+Q)Create your own resume data in JSON format
+
+code:-
+
+let myprofile = {
+    name: "shaik asif nawaz",
+    occupation: "student",
+    email: "asifnawazaddy@gmail.com",
+    phone: "9949856781",
+    summary: "a summary on shaik asif nawaz",
+    location: {
+        address: "11-3-191,mallapally,hyderabad",
+        city: "hyderabad",
+        pincode: "500001 ",
+        state: "telangana",
+
+    },
+    work: {
+        companyname: "guvi geeks",
+        position: "student",
+        startdate: "10-1-2022",
+        enddate: "21-07-2022",
+    },
+    education: {
+        collegename: "guru nanak institutions",
+        area: "ibrahimpatnam,hyderabad",
+        percentage: "78%",
+
+    },
+    skills: {
+        name: "web development",
+        level: "masters",
+        languagesknown: {
+            language1: "java",
+            language2: "c programming"
+
+
+        },
+
+    }
+}
+
+console.log(myprofile);
+
+
+      OUTPUT:-
+ 
+   Object
+   education: {collegename: 'guru nanak institutions', area: 'ibrahimpatnam,hyderabad', percentage: '78%'}
+   email: "asifnawazaddy@gmail.com"
+   location: {address: '11-3-191,mallapally,hyderabad', city: 'hyderabad', pincode: '500001 ', state: 'telangana'}
+   name: "shaik asif nawaz"
+   occupation: "student"
+   phone: "9949856781"
+   skills: {name: 'web development', level: 'masters', languagesknown: {…}}
+   summary: "a summary on shaik asif nawaz"
+   work: {companyname: 'guvi geeks', position: 'student', startdate: '10-1-2022', enddate: '21-07-2022'}    
+  [[Prototype]]: Object
+
+
+
+
+
+3
+Q)Read about the difference between window, screen and document in javascript
+
+4
+Q)Codekata practice
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
